@@ -1,7 +1,7 @@
 html {
   font-family: "Poppins";
 }
-                        /* header section */
+/* header section */
 header {
   padding: 0 96px;
 }
@@ -54,6 +54,10 @@ nav {
   background: #f5f5f5;
 }
 
+.burger {
+  display: none;
+}
+
 .title {
   margin-top: 104px;
   display: flex;
@@ -76,7 +80,7 @@ nav {
   color: #131316;
   font-size: 20px;
   font-weight: 400;
-  line-height: 32px; 
+  line-height: 32px;
 }
 
 .title_buttons {
@@ -109,6 +113,7 @@ nav {
 }
 
 .Book_a_demo {
+  width: 212px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +121,7 @@ nav {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
-  padding: 16px 32px;
+  padding: 16px 0;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
@@ -133,7 +138,7 @@ nav {
 .Book_a_demo img {
   margin-right: 10px;
 }
-                          /* main section */
+/* main section */
 .Hero_wraper {
   display: flex;
   flex-direction: row;
@@ -153,7 +158,7 @@ nav {
 }
 
 main {
-  padding: 85px;
+  padding: 0 85px;
 }
 
 .main_title {
@@ -177,7 +182,8 @@ main {
 }
 
 .main_sub {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   height: 52px;
   color: #494a4d;
   text-align: center;
@@ -185,7 +191,7 @@ main {
   font-weight: 400;
   line-height: 25px;
 }
-                            /* block 1 */
+/* block 1 */
 .Boards {
   margin-top: 65px;
   display: flex;
@@ -209,7 +215,7 @@ main {
   margin-top: 100px;
   column-gap: 24px;
 }
-                     /* block 2-4 */
+/* block 2-4 */
 .Block_wraper {
   display: flex;
   flex-direction: row;
@@ -266,10 +272,10 @@ main {
 .Block_footer:hover img {
   transform: rotateY(180deg);
 }
-                        /* reviews section */
+/* reviews section */
 .reviews {
   margin-top: 100px;
-  background-color: #000000;
+  background: #131316;
   padding: 90px 85px 0;
 }
 
@@ -303,4 +309,183 @@ main {
   top: 45%;
   left: 45%;
   cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .Hero_wraper {
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+  }
+
+  .Boards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Block_wraper {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin-top: 40px;
+  }
+
+  .Block_wraper:nth-child(5),
+  .Block_wraper:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+
+  .video img {
+    width: 550px;
+  }
+
+  .button_wraper {
+    top: 41%;
+    left: 44%;
+  }
+
+  .button_wraper svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 845px) {
+  header {
+    padding: 0 48px;
+  }
+
+  main {
+    padding: 0 48px;
+  }
+
+  .reviews {
+    padding: 0 48px;
+  }
+
+  .Nav_buttons {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title_main {
+    min-width: 340px;
+    color: #131316;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  .title_sub {
+    color: #131316;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .title_buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Get_started,
+  .Book_a_demo {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .main_head {
+    color: #131316;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  .main_sub {
+    color: #494a4d;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .Block_head {
+    color: #131316;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+  .Block_main {
+    color: #494a4d;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .Block_footer {
+    color: #131316;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    margin-top: 20px;
+  }
+
+  .video_title {
+    margin-top: 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  .video img {
+    width: 340px;
+  }
+
+  .button_wraper {
+    top: 43%;
+    left: 43%;
+  }
+
+  .button_wraper svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    padding: 0 16px;
+  }
+
+  main {
+    padding: 0 16px;
+  }
+
+  .reviews {
+    padding: 0 16px;
+}
+}
+
+@media (max-width: 845px) {
+}
+
+@media (max-width: 845px) {
+}
+
+@media (max-width: 845px) {
+}
+
+@media (max-width: 845px) {
 }
