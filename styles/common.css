@@ -1,7 +1,14 @@
 html {
   font-family: "Poppins";
 }
+
+.max-width {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 /* header section */
+
 header {
   padding: 0 96px;
 }
@@ -311,6 +318,17 @@ main {
   cursor: pointer;
 }
 
+.button_wraper svg {
+  fill: white;
+  transition: 200ms;
+  border-radius: 50%;
+}
+
+.button_wraper svg:hover {
+  box-shadow: 0 0 20px rgb(244, 244, 244);
+  fill: #dedede;
+}
+
 @media (max-width: 1100px) {
   .Hero_wraper {
     flex-direction: column;
@@ -475,7 +493,7 @@ main {
 
   .reviews {
     padding: 0 16px;
-}
+  }
 }
 
 @media (max-width: 845px) {
