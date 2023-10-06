@@ -562,7 +562,7 @@ hr {
 }
 
 .card-premium {
-  color: #e5e7eb;
+  color: white;
   background: #131316;
 }
 
@@ -574,7 +574,7 @@ hr {
   .Hero_wraper {
     flex-direction: column;
     margin-top: 60px;
-    align-items: center;
+   align-items: center;
   }
 
   .Right {
