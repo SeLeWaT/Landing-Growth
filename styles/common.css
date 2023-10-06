@@ -394,6 +394,182 @@ hr {
   line-height: 24px;
 }
 
+.pricing-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 85px;
+}
+
+.price-block {
+  margin: 100px 0 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 60px;
+  max-width: 830px;
+  column-gap: 24px;
+}
+
+.price-block__title {
+  display: flex;
+  flex-direction: column;
+  max-width: 612px;
+  row-gap: 24px;
+}
+
+.price-block__title-text {
+  color: #131316;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: -3px;
+}
+
+.price-block__title-subtext {
+  color: #131316;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.price-block__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.price-block__card--padding {
+  display: flex;
+  flex-direction: column;
+  padding: 56px;
+  border-radius: 16px;
+  background: #f8f8f8;
+  max-width: 400px;
+  min-width: 343px;
+  box-sizing: border-box;
+}
+
+.card__about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.card__title {
+  color: #131316;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: -0.36px;
+}
+.card__subtitle {
+  color: #494a4d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.card__price {
+  display: flex;
+  column-gap: 10px;
+  align-items: flex-end;
+  margin-top: 32px;
+}
+
+.card__price-status {
+  color: #131316;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: -0.36px;
+}
+
+.card__price-about {
+  color: #131316;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px; /* 16.8px */
+  letter-spacing: -0.14px;
+  margin-bottom: 5px;
+}
+
+.card__hr {
+  max-width: 288px;
+  border: 1px solid #dfdee2;
+  margin: 24px 0 32px;
+}
+
+.card__li-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 262px;
+}
+
+.card__list {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  flex-direction: column;
+}
+
+.card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #131316;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.card__list-premium {
+  display: flex;
+  margin-top: 12px;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.card__list-premium li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #e5e7eb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.card__list li img,
+.card__list-premium li img {
+  margin-top: 7px;
+}
+
+.price-block__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.price-block__button .Get_started {
+  max-width: 295px;
+  width: 100%;
+}
+
+.card-premium {
+  color: #e5e7eb;
+  background: #131316;
+}
+
+.price-block__subtitle {
+  text-align: center;
+}
+
 @media (max-width: 1100px) {
   .Hero_wraper {
     flex-direction: column;
@@ -401,7 +577,7 @@ hr {
     align-items: center;
   }
 
-  .Right{
+  .Right {
     margin-top: -25px;
   }
 
@@ -434,6 +610,11 @@ hr {
     width: 60px;
     height: 60px;
   }
+
+  .price-block__cards {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 
 @media (max-width: 845px) {
@@ -445,7 +626,7 @@ hr {
     padding: 0 48px;
   }
 
-  .main_title{
+  .main_title {
     margin-top: 60px;
   }
 
@@ -560,6 +741,10 @@ hr {
     font-weight: 500;
     line-height: 38px;
   }
+
+  .pricing-wrapper {
+    padding: 0 48px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -589,7 +774,7 @@ hr {
 
   .section_title {
     font-size: 16px;
-    line-height: 24px; 
+    line-height: 24px;
   }
 
   .section_name {
@@ -600,6 +785,51 @@ hr {
   .section_company {
     font-size: 16px;
     line-height: 24px; /* 24px */
+  }
+
+  .pricing-wrapper {
+    padding: 0 16px;
+  }
+
+  .price-block__title-text {
+    color: #131316;
+    font-size: 32px;
+    line-height: 38px; /* 38.4px */
+  }
+
+  .price-block__title-subtext {
+    font-size: 16px;
+    line-height: 26px; /* 25.6px */
+  }
+
+  .price-block__card--padding {
+    padding: 40px 24px;
+  }
+
+  .card__title {
+    font-size: 28px;
+    line-height: 34px; /* 33.6px */
+    letter-spacing: -0.28px;
+  }
+
+  .card__subtitle {
+    font-size: 16px;
+    line-height: 26px; /* 25.6px */
+  }
+
+  .card__price-status {
+    font-size: 28px;
+    line-height: 34px; /* 33.6px */
+    letter-spacing: -0.28px;
+  }
+
+  .card__price-about {
+    font-size: 12px;
+    line-height: 14px; /* 14.4px */
+  }
+
+  .card__hr {
+    margin: 32px 0;
   }
 }
 
